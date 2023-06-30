@@ -5,7 +5,7 @@ const Navbar = () => {
     <div>
       <nav className="navbar fixed-top navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
-          <Link className="navbar-brand" to="/">
+          <Link className="navbar-brand" to="/News-App">
             News
           </Link>
           <button
