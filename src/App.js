@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "./components/Navbar";
 import News from "./components/News";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Routes, Route } from "react-router-dom";
 import LoadingBar from "react-top-loading-bar";
 
 const App = () => {
@@ -9,7 +9,7 @@ const App = () => {
 
   return (
     <>
-      <Router>
+      <HashRouter>
         <LoadingBar color="#f11946" height={3.5} progress={progress} />
         <Navbar />
         <Routes>
@@ -50,7 +50,7 @@ const App = () => {
             element={<News setProgress={setProgress} key="technology" pageSize={12} category="technology" country="in" />}
           ></Route>
         </Routes>
-      </Router>
+      </HashRouter>
     </>
   );
 };
