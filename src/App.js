@@ -15,7 +15,7 @@ const App = () => {
         <Routes>
           <Route
             exact
-            path="/"
+            path="/News-App"
             element={<News setProgress={setProgress} key="general" pageSize={12} category="general" country="in" />}
           ></Route>
           <Route
